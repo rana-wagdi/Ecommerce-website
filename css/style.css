@@ -5,6 +5,9 @@
     font-family: 'Poppins', sans-serif;
 
 }
+html{
+    width:100%
+}
 /*header start*/
 
 #header{
@@ -48,7 +51,10 @@
 }
 .logo img{
     height: 3rem;
-    margin: 0 8rem;
+    margin: 1.2rem 5rem ;
+}
+.fa-times{
+    transform: skew(-180deg) rotate(-180deg);
 }
 
 /*header end*/
@@ -60,8 +66,12 @@
     position: relative;
 
 }
-
-
+#home .content{
+    margin-top: 5rem;
+}
+#home .content h1{
+    color: #fbf2fc;
+}
  .video-container{
     position: absolute;
     top: 0;
@@ -78,3 +88,50 @@
 
 }
 /*home end*/
+@media (max-width:769px){
+    html{
+    }
+   #header .fa-align-justify{
+        font-size: 2rem;
+        margin: 1rem 3rem;
+        color: #fff;
+        float: right;
+        display: block;
+        z-index: 1;
+        position: relative;
+    }
+   #header nav{
+        top:0;
+        right: 0;
+        height: 100vh;
+        position: fixed;
+        background-color: #565756;
+        float: right;
+        width: 20rem;
+        display: none;
+         
+     }
+ 
+     #header nav ul{
+        
+         flex-flow: column;
+         justify-content: center;
+     }
+     #header nav ul li{
+         margin: 2rem 0;
+     }
+     #header nav ul li a{
+         padding: .5rem 7.5rem;
+         font-size: 1.2rem;
+         border-radius: 5rem;
+     }
+     #header nav ul li a:hover{
+         color: #1e1f1e;
+         background-color: #fbf2fc;
+     }
+     #header nav.active{
+         display: flex;
+     }
+
+    
+}
