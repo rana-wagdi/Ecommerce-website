@@ -7,4 +7,12 @@ $(document).ready(function(){
         $('.fa-align-justify').removeClass('fa-times');
         $('nav').removeClass('active');
     });
+    $(window).on('scroll load',function(){
+        if($(window).scrollTop()>10){
+            $('#header').addClass('header-active');
+        }else{
+            $('#header').removeClass('header-active');
+        
+        }
+    })
 })
