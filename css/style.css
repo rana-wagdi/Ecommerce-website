@@ -48,6 +48,7 @@ html{
     color: #fff;
     float: right;
     display: none;
+    cursor: pointer;
 }
 .logo img{
     height: 3rem;
@@ -70,7 +71,44 @@ html{
     margin-top: 5rem;
 }
 #home .content h1{
+    font-family: 'Lobster', cursive;
     color: #fbf2fc;
+}
+#home .content h2{
+    color: #b3b3b3;
+}
+#home .content p{
+    color: #dbdbdb;
+}
+#home .content button{
+    outline: none;
+    border: none;
+    border-radius: 4rem;
+    background: #ff1900;
+    padding: .5rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: .1rem;
+    position: relative;
+    width: 10rem;
+    overflow: hidden;
+    z-index: 1;
+}
+ .content button::before{
+    content: '';
+    top: 0;
+    left: 0;
+    background: #fbf2fc;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+ .content button:hover::before{
+    width: 100%;
 }
  .video-container{
     position: absolute;
@@ -88,6 +126,15 @@ html{
 
 }
 /*home end*/
+
+/* section dress start*/
+#dress{
+    margin: 7rem 10rem;
+    text-align: center;
+}
+
+
+/*section dress end*/
 @media (max-width:769px){
     html{
     }
@@ -133,5 +180,5 @@ html{
          display: flex;
      }
 
-    
+ 
 }
