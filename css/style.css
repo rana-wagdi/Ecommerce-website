@@ -33,7 +33,7 @@ html{
     margin: 2rem 4rem 0 0;
 }
 #header nav ul li {
-    margin: -1.5rem 2.5rem;
+    margin: -1.8rem 2.5rem;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
@@ -52,6 +52,7 @@ html{
     float: right;
     display: none;
     cursor: pointer;
+    z-index: 10000;
 }
 .logo img{
     height: 2.3rem;
@@ -155,9 +156,14 @@ html{
     font-size: 1rem;
     font-weight: bold;
 }
-
+.card{
+    margin: 0 8rem;
+    box-shadow: 3px 3px 6px #b3b3b3,-3px -3px 6px #b3b3b3;
+    outline: none;
+    border: none;
+}
 /*section dress end*/
-@media (max-width:769px){
+@media (max-width:900px){
     html{
     }
    #header .fa-align-justify{
@@ -174,7 +180,7 @@ html{
         right: 0;
         height: 100vh;
         position: fixed;
-        background-color: #565756;
+        background-color: #ff1900;
         float: right;
         width: 20rem;
         display: none;
@@ -188,6 +194,7 @@ html{
      }
      #header nav ul li{
          margin: 2rem 0;
+         color: #493131;
      }
      #header nav ul li a{
          padding: .5rem 7.5rem;
@@ -201,6 +208,12 @@ html{
      #header nav.active{
          display: flex;
      }
-
+     .logo img{
+        height: 2.3rem;
+        margin: .6rem 3rem ;
+    }
+    .card{
+        margin: 0 3rem;
+    }
  
 }

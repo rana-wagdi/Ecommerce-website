@@ -8,7 +8,7 @@ $(document).ready(function(){
         $('nav').removeClass('active');
     });
     $(window).on('scroll load',function(){
-        if($(window).scrollTop()>10){
+        if($(window).scrollTop()>150){
             $('#header').addClass('header-active');
         }else{
             $('#header').removeClass('header-active');
