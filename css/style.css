@@ -168,7 +168,7 @@ html{
 .card{
 
     height: 360px;
-    margin: 1rem 2.5rem;
+    margin: 1rem 2.4rem;
     box-shadow: 0rem 1rem 1.5rem rgba(0, 0, 0, .5);
     transition: .5s ease-in-out;
 }
@@ -207,7 +207,7 @@ html{
     transform: translateY(4rem);
     transition: .5 all;
     opacity: 0;
-    margin-top: 1.5rem;
+    margin-top: 1.7rem;
 }
 .card:hover .info{
     opacity:1;
@@ -219,7 +219,7 @@ html{
 .card .info p{
     letter-spacing: .2rem;
     font-size: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 1.3rem;
     margin-bottom: 2rem;
 }
 .card .info .btn{
@@ -298,6 +298,8 @@ html{
         height: 2.3rem;
         margin: .6rem 3rem ;
     }
-
+    .card{
+        margin: 1rem 1.6rem;
+    }
  
 }
