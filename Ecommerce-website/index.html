@@ -42,7 +42,7 @@
                     <h2>Rei Shito’s New Book Is Just the Fix</h2>
                     <p>hito has chronicled New York, London, Milan, and Paris fashion weeks for 16 years and remains one
                         of the best-dressed </p>
-                    <a href=""><button>Sign up</button></a>
+                    <button type='button' class='btn btn-primary btn-lg' data-toggle='modal' data-target='#modal1'>Best deals today only</button>
                 </div>
                 <div class="video-container">
                     <video src="media/video.mp4" muted autoplay loop class="vid"></video>
@@ -66,7 +66,7 @@
             <main>
                 <div class="container">
                     <div class="row wrapper">
-                        <div class="col-md-4  text-center">
+                        <div class="col-md-4  text-xs-center">
                             <div class="card ">
                                 <img src="images/img1.jpg" width="800px" alt="..." class="img-fluid">
                                 <div class="card-block info ">
@@ -79,7 +79,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4  text-center">
+                        <div class="col-md-4  text-xs-center">
                             <div class="card ">
                                 <img src="images/img2.jpg" width="800px" alt="..." class="img-fluid">
                                 <div class="card-block info ">
@@ -91,7 +91,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4  text-center">
+                        <div class="col-md-4  text-xs-center">
                             <div class="card ">
                                 <img src="images/img3.jpg" width="800px" alt="..." class="img-fluid">
                                 <div class="card-block info ">
@@ -111,7 +111,19 @@
     </section>
 
     <!--Dress section end-->
-    
+
+<!--Model-->
+<div id='modal1' class='modal' role='dialog'>
+    <div class='modal-dialog' role='document'>
+        <div class='modal-content'>
+            <div class='modal-header'>Best Deal OFFER ever</div>
+            <div class='modal-body'>Don't miss out buy now and save big</div>
+            <div class='modal-footer'>
+                <button type='button' class='btn btn-primary' data-dismiss='modal'>close</button>
+            </div>
+        </div>
+    </div>
+</div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/app.js"></script>
